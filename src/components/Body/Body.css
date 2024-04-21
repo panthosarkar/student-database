@@ -14,8 +14,9 @@ body{
     align-items: center;
     width: 100%;
     margin: auto;
+    font-weight: 500;
 }
-.body-container-btns button{
+button{
     background-color: #A6E1FA;
     color: #001C55;
     border: none;
