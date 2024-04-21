@@ -1,0 +1,27 @@
+body{
+    background-color: #001C55;
+}
+.body-container h1{
+    display: flex;
+    width: 100%;
+    margin: auto;
+    justify-content: center;
+    align-items: center;
+}
+.body-container-btns{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    margin: auto;
+}
+.body-container-btns button{
+    background-color: #A6E1FA;
+    color: #001C55;
+    border: none;
+    border-radius: 15px;
+    padding: .5rem;
+    font-size: 20px;
+    width: 20%;
+    margin: 15px;
+}
