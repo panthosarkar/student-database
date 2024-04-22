@@ -15,15 +15,13 @@ function CreateModal({ onClose, onSubmit }) {
 
   const handleSubmit = (e) => {
     e.preventDefault();
-    axios.post(`${getApiUrl}/api/students`,formData)
-      .then((response) => response.json())
-      .then((data) => {
-        console.log("Success:", data);
+    axios.post(`${getApiUrl()}/api/students`,formData)
+    .then((data) => { 
+      console.log(data)
+     })
+     .catch((error) => { 
+      console.log(error)
       })
-      .catch((error) => {
-        console.error("Error:", error);
-      });
-      console.log(formData);
   };
 
   return (
