@@ -1,6 +1,8 @@
 import React, { useState } from "react";
 import "./Body.css";
 import CreateModal from "../Modals/CreateModal";
+import axios from "axios";
+import { getApiUrl } from "../../utils/url";
 
 function Body() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -21,17 +23,18 @@ function Body() {
     <div className="body-container">
       <h1 className="header ">Student Database</h1>
       <div className="body-container-btns">
-        <button className="create-btn" onClick={openModal}>
+        <a className="create-btn" onClick={openModal}>
           Create
-        </button>
+        </a>
         {isModalOpen && (
           <CreateModal isOpen={isModalOpen} onClose={closeModal} />
         )}
-        <button>Edit</button>
-        <button>Delete</button>
-        <button>Search</button>
-        <button>Show All</button>
+        <a>Edit</a>
+        <a>Delete</a>
+        <a>Search</a>
+        <a>Show All</a>
       </div>
+      <div className="overlay"></div>
     </div>
   );
 }
