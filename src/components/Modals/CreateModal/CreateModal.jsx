@@ -26,6 +26,7 @@ function CreateModal({ onClose, onSubmit }) {
 
   return (
     <div className="create-modal">
+      <div className="overlay"></div>
       <div className="create-modal-content">
         <span className="close" onClick={onClose}>
           &times;

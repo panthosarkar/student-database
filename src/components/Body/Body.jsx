@@ -18,12 +18,11 @@ function Body() {
         {isModalOpen && (
           <CreateModal isOpen={isModalOpen} onClose={closeModal} />
         )}
+        <a>Search</a>
         <a>Edit</a>
         <a>Delete</a>
-        <a>Search</a>
         <a>Show All</a>
       </div>
-      <div className="overlay"></div>
     </div>
   );
 }
