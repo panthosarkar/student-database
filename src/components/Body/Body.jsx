@@ -1,8 +1,6 @@
 import React, { useState } from "react";
 import "./Body.css";
-import CreateModal from "../Modals/CreateModal";
-import axios from "axios";
-import { getApiUrl } from "../../utils/url";
+import CreateModal from "../Modals/CreateModal/CreateModal";
 
 function Body() {
   const [isModalOpen, setIsModalOpen] = useState(false);
@@ -10,15 +8,6 @@ function Body() {
   const openModal = () => setIsModalOpen(true);
   const closeModal = () => setIsModalOpen(false);
 
-  const handleSubmit = async (formData) => {
-    try {
-      console.log("from-data", formData);
-
-      closeModal();
-    } catch {
-      console.error("error");
-    }
-  };
   return (
     <div className="body-container">
       <h1 className="header ">Student Database</h1>

@@ -1,6 +1,6 @@
 import React, { useState } from "react";
-import "../Modals/CreateModal.css";
-import { getApiUrl } from "../../utils/url";
+import "../CreateModal/CreateModal.css";
+import { getApiUrl } from "../../../utils/url";
 import axios from "axios";
 
 function CreateModal({ onClose, onSubmit }) {
